@@ -6,8 +6,6 @@
         <title>镜华 - 公会战排名查询</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171663021-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -41,8 +39,8 @@
         <div id="Kyouka">
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
-                    <a class="navbar-brand visible-xs" href="https://kengxxiao.github.io/Kyouka/" style="width: calc(100% - 59px);">镜华 - 公会战排名查询</a>
-                    <a class="navbar-brand hidden-xs" href="https://kengxxiao.github.io/Kyouka/">镜华 - 公会战排名查询</a>
+                    <a class="navbar-brand visible-xs" href="https://kengxxiao.github.io/Kyouka/" style="width: calc(100% - 59px);">镜华 - 公会战排名查询 [EN Server]</a>
+                    <a class="navbar-brand hidden-xs" href="https://kengxxiao.github.io/Kyouka/">镜华 - 公会战排名查询 [EN Server]</a>
                     <div class="visible-xs">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -75,10 +73,7 @@
                         </li>
                     </form>
                     <form class="navbar-form navbar-right hidden-xs">
-                        <button type="button" class="btn btn-block btn-info" onclick="window.location.href='https://github.com/Kengxxiao/Kyouka/issues'">意见反馈(Github)</button>
-                    </form>
-                    <form class="navbar-form navbar-right hidden-xs">
-                        <button type="button" class="btn btn-block btn-info" onclick="window.location.href='https://nga.178.com/read.php?tid=22368702'">意见反馈(NGA)</button>
+                        <button type="button" class="btn btn-block btn-info" onclick="window.location.href='https://github.com/Kyaru2333/Kyouka'">意见反馈(Github)</button>
                     </form>
                 </div>
             </nav>
@@ -94,11 +89,9 @@
                     </div>
                 </div>
                 <div class="visible-xs">
-                    <button type="button" class="btn btn-block search" data-loading-text="获取中..." @click="searchFav">查询收藏</button>
-                    <button type="button" class="btn btn-block search" data-loading-text="获取中..." @click="searchRank">查询档线</button>
                     <br />
                 </div>
-                <input :type="inputtype" id="bar" v-model="selectdata" class="form-control" placeholder="查询内容(支持正则表达式)" required autofocus />
+                <input :type="inputtype" id="bar" v-model="selectdata" class="form-control" placeholder="查询内容" required autofocus />
                 <br />
                 <div class="form-group">
                     <label class="radio-inline" v-for="(item,i) in selectType" :key="i">
